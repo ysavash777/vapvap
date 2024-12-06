@@ -1,0 +1,256 @@
+body {
+  font-family: Bungee, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #ffffff;
+}
+
+header {
+  background: #ffe666;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 10px solid #dbc65d;
+}
+
+.header-logo {
+  background-image: url(logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 45px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+  color: #474754;
+  user-select: none;
+  pointer-events: none;
+}
+
+#recommended .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 300px;
+  background: #ffffff;
+  border: 2px solid #303034;
+  box-shadow: 0px 5px 0px #303034;
+}
+
+.product .title {
+  font-weight: bold;
+  font-size: 21px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #303034;
+}
+
+.product .puff,
+.product .rank {
+  background: #ffbf86;
+  color: #303034;
+  border-radius: 6px;
+  padding: 4px 0px 4px 0px;
+  width: 99%;
+  font-size: 12px;
+  border: 2px solid #303034;
+  box-shadow: 0px 3px 0px #303034;
+  user-select: none;
+  pointer-events: none;
+}
+
+.product button {
+  margin-top: 10px;
+  background: #ffe666;
+  font-family: Bungee, sans-serif;
+  border-radius: 9px;
+  font-size: 20px;
+  padding: 10px;
+  color: #303034;
+  width: 100%;
+  border: 2px solid #303034;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 0px #303034;
+  user-select: none;
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+.catalog-link {
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 21px;
+  color: #303034;
+  text-decoration: none;
+}
+
+.review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.review {
+  width: 390px;
+  min-height: 150px;
+  background: #f9f9f9;
+  padding: 10px 10px 6px 10px;
+  border: 2px solid #303034;
+  box-shadow: 0px 5px 0px #303034;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.review-content {
+  flex: 1;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #303034;
+  user-select: none;
+  pointer-events: none;
+}
+
+.review-name {
+  font-weight: bold;
+}
+
+.review-meta {
+  font-size: 12px;
+  color: #666;
+}
+
+.review-stars {
+  font-size: 14px;
+  margin: 5px 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.review-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-height: none;
+  font-size: 14px;
+}
+
+.review-product-image img {
+  width: 120px;
+  height: 202px;
+  object-fit: cover;
+  border-radius: 13px;
+  border: 2px solid #303034;
+  user-select: none;
+  pointer-events: none;
+}
+
+#reviews {
+  background: #e1ecff;
+  padding: 2px 0px 62px 0px;
+}
+
+#clientes {
+  color: #4e596d;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .review {
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+  }
+
+  .review-content {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .review-product-image img {
+    margin-top: 10px;
+  }
+}
+
+#contact .contact-panel {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.contact-panel .avatar {
+  display: flex
+;
+  align-items: center;
+  gap: 10px;
+  background: #0f5132;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.chat-box {
+  background: #fffbe6;
+  padding: 20px;
+  text-align: left;
+}
+
+.contact-btn {
+  background: #54cf95;
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
